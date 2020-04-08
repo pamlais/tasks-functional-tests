@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class tasksTest {
 
 	public WebDriver acessarAplicacao() {
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://localhost:8001/tasks");	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
