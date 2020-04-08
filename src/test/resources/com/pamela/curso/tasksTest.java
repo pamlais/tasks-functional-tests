@@ -1,3 +1,4 @@
+package com.pamela.curso;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -5,12 +6,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class tasksTest {
 
 	public WebDriver acessarAplicacao() {
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		driver.navigate().to("http://localhost:8001/tasks");	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
